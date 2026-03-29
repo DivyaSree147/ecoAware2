@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoAware - Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html">EcoAware</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topics.html">Topics</a></li>
+        <li><a href="actions.html">Actions</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section quiz-section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <h1>Quick Eco Quiz</h1>
+        <p style="font-size: 1.1rem; color: #059669;">Test your environmental knowledge and learn something new!</p>
+      </div>
+      <form id="eco-quiz">
+        <fieldset>
+          <legend>1) Which choice helps reduce plastic waste?</legend>
+          <label>
+            <input type="radio" name="q1" value="correct" required>
+            Using a reusable water bottle
+          </label>
+          <label>
+            <input type="radio" name="q1" value="wrong">
+            Buying bottled water every day
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>2) What is a good way to lower carbon emissions?</legend>
+          <label>
+            <input type="radio" name="q2" value="wrong" required>
+            Driving alone for short trips
+          </label>
+          <label>
+            <input type="radio" name="q2" value="correct">
+            Taking public transport
+          </label>
+        </fieldset>
+
+        <div style="text-align: center;">
+          <button type="submit" class="cta-btn">Show My Result</button>
+        </div>
+      </form>
+      <p id="quiz-result" aria-live="polite"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 EcoAware. Every small step matters.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
